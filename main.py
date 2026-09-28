@@ -124,9 +124,16 @@ async def analyze_rice(file: UploadFile = File(...)):
 
     return {
         "total_grains": total_grains,
+        "avg_length": avg_length,
         "avg_length_mm": avg_length,
+        "average_length": avg_length,
+        "length": avg_length,
+        "avg_width": avg_width,
         "avg_width_mm": avg_width,
+        "average_width": avg_width,
+        "width": avg_width,
         "length_width_ratio": lw_ratio,
         "broken_percentage": broken_pct,
+        "broken_percent": broken_pct,
         "calibration_used": f"{round(pixels_per_mm, 2)} px/mm"
     }
